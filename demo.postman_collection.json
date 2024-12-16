@@ -1,0 +1,128 @@
+{
+  "info": {
+    "_postman_id": "1425bee2-2d03-4ecf-b3f2-6136890f58a7",
+    "name": "demo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "17279498"
+  },
+  "item": [
+    {
+      "name": "signup",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"test1@test.com\",\n    \"password\": \"1234\",\n    \"etc\": \"etc\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/member/sign-up",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "member", "sign-up"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"test2@test2.com\",\n    \"password\": \"1234\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/member/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "member", "login"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "logout",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "refresh-token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MkB0ZXN0Mi5jb20iLCJhdXRoIjoiUk9MRV9VU0VSIiwiZXhwIjoxNzMzNTY0NDM2fQ.juxBJadsPGRRYtpqNkzPzDGmL-kXCqgQVeP2PDXaO-B_5hDIhqMTnnqsiIbcxdAYjxOjRQe3qFEA85hbkjiOag",
+            "type": "text"
+          },
+          {
+            "key": "access-token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MkB0ZXN0Mi5jb20iLCJhdXRoIjoiUk9MRV9VU0VSIiwiZXhwIjoxNzMzNDc4MDM3fQ.4fPb_yMUJiHA-OOx5EsYil8UpiPniBnjm7C5OqxEM8dEZcyOSyY1tUST4K6swz4BUsdXX8XTj4qTQ0Ybb1HNmQ",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/member/logout",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "member", "logout"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "refresh-token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MkB0ZXN0Mi5jb20iLCJhdXRoIjoiUk9MRV9VU0VSIiwiZXhwIjoxNzMzNTY0NDM2fQ.juxBJadsPGRRYtpqNkzPzDGmL-kXCqgQVeP2PDXaO-B_5hDIhqMTnnqsiIbcxdAYjxOjRQe3qFEA85hbkjiOag",
+            "type": "text"
+          },
+          {
+            "key": "access-token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MkB0ZXN0Mi5jb20iLCJhdXRoIjoiUk9MRV9VU0VSIiwiZXhwIjoxNzMzNDc4MDM3fQ.4fPb_yMUJiHA-OOx5EsYil8UpiPniBnjm7C5OqxEM8dEZcyOSyY1tUST4K6swz4BUsdXX8XTj4qTQ0Ybb1HNmQ",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/test",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "test"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
